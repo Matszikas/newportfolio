@@ -18,35 +18,48 @@
     --cor-preto: black;
     --cor-cinza: lightgray;
     --cor-branco: white;
+    --cor-texto:#5e2129;
 
 
 
 }
   body{
-   background: var(--cor-cinza) ;
-    
+   background-size: cover;
  }
     
  .botoes{
   display: flex;
   padding-left: 20%;
   gap: 200px;
-  margin: 10px;
+  margin-top: 15px;
+  
   
  }
 
  .botoes__titulo{
    text-decoration: none;
-   color: var(--cor-preto);
+   color: var(--cor-texto);
    font-family: 'Montserrat', sans-serif;
    font-weight: 600;
    font-size: 32px;
-   
-   
+
+ }
+ .foto__minha{
+   margin-left: 70%;
+
+   border-radius: 10%;
+   position: relative;
+   border-bottom: 3px solid var(--cor-texto);
+   border-right: 3px solid var(--cor-texto);
+   border-left: 3px solid var(--cor-texto);
+   border-top: 3px solid var(--cor-texto);
+   padding: 1px;
  }
 
  .mensagem__boasvindas{
-   margin: 20%;
+   color: var(--cor-texto);
+   margin-top:20%;
+   margin-left: 20% ;
    font-size: 32px;
    font-family: monospace;
    border-right: 4px solid;
@@ -55,6 +68,17 @@
    overflow: hidden;
    animation: typing 2s steps(41),
    blinking 0.5s infinite step-end alternate;
+
+ }
+
+ .mensagem__secundaria{
+   color: var(--cor-texto);
+  font-family:'Montserrat', sans-serif;
+  font-size: 16px;
+  margin-left:22%;
+  margin-top: 1%;
+  display: flex;
+  
 
  }
 
