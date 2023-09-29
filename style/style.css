@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montserrat:wght@200;400;600&display=swap');
 @keyframes typing {
    from {
       width: 0;
@@ -19,7 +18,10 @@
     --cor-roxa: purple;
     --cor-branco: white;
     --cor-texto:white;
-   --cor-vinho:#5e2129;
+    --cor-vinho:#5e2129;
+    --cor-vermelho:#ff0022;
+    --cor-escura:#721212;
+    --cor-clara:#814b4b;
 
 
 }
@@ -27,37 +29,51 @@
    background-size: cover;
  }
     
- .botoes{
-  display: flex;
-  padding-left: 20%;
-  gap: 200px;
-  margin-top: 20px;
-  
-  
- }
+ 
+
+
+ .cabecalho{
+  display:flex;
+  margin-top: 15px;
+  justify-content: space-between;
+}
+
+ .botao__princiapal{
+    margin-left: 325px;
+    display: flex;
+    text-decoration: none;
+    font-family: 'Dela Gothic One', cursive;
+    font-weight:400;
+    font-size: 30px;
+    color: var(--cor-branco);
+   }
+
+ 
 
  .botoes__titulo{
    text-decoration: none;
    color: var(--cor-texto);
    font-family: 'Montserrat', sans-serif;
    font-weight: 600;
-   font-size: 32px;
+   font-size: 24px;
    border-radius: 25px;
    padding: 5px 30px 5px 30px;
-   border-bottom: 3px solid var(--cor-texto);
-   border-right: 3px solid var(--cor-texto);
-   border-left: 3px solid var(--cor-texto);
-   border-top: 3px solid var(--cor-texto);
+   margin: 0px 15px 0px 15px ;
+  
  }
  .foto__minha{
    margin-left: 70%;
    border-radius: 10%;
    position: relative;
-   border-bottom: 8px solid var(--cor-texto);
-   border-right: 8px solid var(--cor-texto);
-   border-left: 8px solid var(--cor-texto);
-   border-top: 8px solid var(--cor-texto);
+   border-bottom: 8px solid var(--cor-branco);
+   border-right: 8px solid var(--cor-branco);
+   border-left: 8px solid var(--cor-branco);
+   border-top: 8px solid var(--cor-branco);
    padding: 1px;
+ }
+
+ .mensagem{
+
  }
 
  .mensagem__boasvindas{
@@ -86,12 +102,18 @@
    overflow: hidden;
    animation: typing 5s steps(81),
    blinking 0.5s infinite step-end alternate;
-  
-  
+   word-wrap: break-word;
 
  }
 
    .botoes__titulo:hover {
-     color: var(--cor-vinho);
+     color: var(--cor-vermelho);
     
+   }
+
+   .foto__minha:hover{
+    border-bottom: 8px solid var(--cor-vermelho);
+    border-right: 8px solid var(--cor-vermelho);
+    border-left: 8px solid var(--cor-vermelho);
+    border-top: 8px solid var(--cor-vermelho);
    }
