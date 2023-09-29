@@ -72,9 +72,6 @@
    padding: 1px;
  }
 
- .mensagem{
-
- }
 
  .mensagem__boasvindas{
    color: var(--cor-texto);
@@ -97,10 +94,10 @@
    font-size: 16px;
    margin-left:22%;
    margin-top: 1%;
-   width: 81ch;
+   width: 97ch;
    white-space: nowrap;
    overflow: hidden;
-   animation: typing 5s steps(81),
+   animation: typing 5s steps(97),
    blinking 0.5s infinite step-end alternate;
    word-wrap: break-word;
 
