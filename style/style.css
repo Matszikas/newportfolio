@@ -16,10 +16,10 @@
 
  :root{
     --cor-preto: black;
-    --cor-cinza: lightgray;
+    --cor-roxa: purple;
     --cor-branco: white;
-    --cor-texto:#5e2129;
-
+    --cor-texto:white;
+   --cor-vinho:#5e2129;
 
 
 }
@@ -31,7 +31,7 @@
   display: flex;
   padding-left: 20%;
   gap: 200px;
-  margin-top: 15px;
+  margin-top: 20px;
   
   
  }
@@ -42,17 +42,21 @@
    font-family: 'Montserrat', sans-serif;
    font-weight: 600;
    font-size: 32px;
-
- }
- .foto__minha{
-   margin-left: 70%;
-
-   border-radius: 10%;
-   position: relative;
+   border-radius: 25px;
+   padding: 5px 30px 5px 30px;
    border-bottom: 3px solid var(--cor-texto);
    border-right: 3px solid var(--cor-texto);
    border-left: 3px solid var(--cor-texto);
    border-top: 3px solid var(--cor-texto);
+ }
+ .foto__minha{
+   margin-left: 70%;
+   border-radius: 10%;
+   position: relative;
+   border-bottom: 8px solid var(--cor-texto);
+   border-right: 8px solid var(--cor-texto);
+   border-left: 8px solid var(--cor-texto);
+   border-top: 8px solid var(--cor-texto);
    padding: 1px;
  }
 
@@ -73,13 +77,21 @@
 
  .mensagem__secundaria{
    color: var(--cor-texto);
-  font-family:'Montserrat', sans-serif;
-  font-size: 16px;
-  margin-left:22%;
-  margin-top: 1%;
-  display: flex;
+   font-family:'Montserrat', sans-serif;
+   font-size: 16px;
+   margin-left:22%;
+   margin-top: 1%;
+   width: 81ch;
+   white-space: nowrap;
+   overflow: hidden;
+   animation: typing 5s steps(81),
+   blinking 0.5s infinite step-end alternate;
+  
   
 
  }
 
- 
+   .botoes__titulo:hover {
+     color: var(--cor-vinho);
+    
+   }
